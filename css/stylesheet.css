@@ -55,7 +55,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:1060px;
   margin:0 auto;
 }
 
@@ -103,30 +103,37 @@ th {
 img {
   max-width:100%;
 }
-
+ul { list-style: none outside none; margin:0; padding: 0; text-align: center }
+li { display: inline; margin: 0 10px; }
 header {
-  width:250;
+  width:250px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
 header ul {
-  list-style:none;
-  height:40px;
-  padding:0;
-  background: #f4f4f4;
-  border-radius:5px;
-  border:1px solid #e0e0e0;
-  width:250px;
-}
+    display: table;
+    height:40px;
+    padding: 0;
+    background: #f4f4f4;
+    border-radius:5px;
+    border:1px solid #e0e0e0;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  
+  header li {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    padding: 0;
+    border-right:1px solid #e0e0e0;
+    height:40px;
+  }
 
-header li {
-  width:53px;
-  float:left;
-  border-right:1px solid #e0e0e0;
-  height:40px;
-}
 
 header li:first-child a {
   border-radius:5px 0 0 5px;
@@ -173,7 +180,7 @@ header ul a strong {
 section {
   width:700px;
   float:right;
-  padding-bottom:50px;
+  padding-bottom:20px;
 }
 
 small {
@@ -209,7 +216,7 @@ footer {
   }
 
   header {
-    padding-right:120px;
+    padding-right:320px;
   }
 
   section {
